@@ -1,6 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight, Play, Pause, MapPin, Calendar, Clock, Sparkles, Send, CheckCircle } from "lucide-react";
 import { Inquiry } from "../types";
+import image1 from "../../assets/image1.png";
+import image2 from "../../assets/image2.jpg";
+import image3 from "../../assets/image3.png";
+import image4 from "../../assets/image4.jpg";
+import image5 from "../../assets/image5.jpg";
+import image6 from "../../assets/image6.png";
 
 interface HeroSliderProps {
   onFormSubmit: (inquiry: Inquiry) => void;
@@ -318,7 +324,7 @@ export default function HeroSlider({ onFormSubmit, onOpenScheduler }: HeroSlider
                   {/* Pill Images row 1 */}
                   <div className="h-32 sm:h-44 w-full rounded-full overflow-hidden border-2 border-indigo-500/20 shadow-lg shadow-slate-950/50 group shrink-0 relative">
                     <img 
-                      src={activeSlide.images[0]} 
+                      src={image1} 
                       alt="Student active learning" 
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500" 
@@ -326,7 +332,7 @@ export default function HeroSlider({ onFormSubmit, onOpenScheduler }: HeroSlider
                   </div>
                   <div className="h-32 sm:h-44 w-full rounded-full overflow-hidden border-2 border-violet-500/20 shadow-lg shadow-slate-950/50 group shrink-0 relative">
                     <img 
-                      src={activeSlide.images[1]} 
+                      src={image2}
                       alt="Student reading" 
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500" 
@@ -334,7 +340,7 @@ export default function HeroSlider({ onFormSubmit, onOpenScheduler }: HeroSlider
                   </div>
                   <div className="h-32 sm:h-44 w-full rounded-full overflow-hidden border-2 border-cyan-500/20 shadow-lg shadow-slate-950/50 group shrink-0 relative">
                     <img 
-                      src={activeSlide.images[2]} 
+                      src={image3} 
                       alt="Preschooler playing" 
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500" 
@@ -351,7 +357,7 @@ export default function HeroSlider({ onFormSubmit, onOpenScheduler }: HeroSlider
                 >
                   <div className="h-32 sm:h-44 w-full rounded-full overflow-hidden border-2 border-amber-500/20 shadow-lg shadow-slate-950/50 group shrink-0">
                     <img 
-                      src={activeSlide.images[3]} 
+                      src={image4} 
                       alt="Student writing" 
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500" 
@@ -359,7 +365,7 @@ export default function HeroSlider({ onFormSubmit, onOpenScheduler }: HeroSlider
                   </div>
                   <div className="h-32 sm:h-44 w-full rounded-full overflow-hidden border-2 border-indigo-500/20 shadow-lg shadow-slate-950/50 group shrink-0">
                     <img 
-                      src={activeSlide.images[4]} 
+                      src={image5} 
                       alt="Computer lab learning" 
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500" 
@@ -367,7 +373,7 @@ export default function HeroSlider({ onFormSubmit, onOpenScheduler }: HeroSlider
                   </div>
                   <div className="h-32 sm:h-44 w-full rounded-full overflow-hidden border-2 border-violet-500/20 shadow-lg shadow-slate-950/50 group shrink-0">
                     <img 
-                      src={activeSlide.images[5]} 
+                      src={image6} 
                       alt="Happy students group" 
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500" 
